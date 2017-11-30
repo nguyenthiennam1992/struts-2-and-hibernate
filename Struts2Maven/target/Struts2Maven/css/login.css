@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+
+body {
+		
+		background: #c0c0aa;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+	
+.login-container{
+		margin: 16%;
+	}
+.login-form{
+	position: absolute;
+    width: 25%;
+    top: 70%;
+}
+.pass-box{
+	padding-top: 15px;
+}
+.big-text-box{
+	position: absolute;
+    right: 25px;
+    top: 55px;
+}
+.fisrt-box{
+	font-size: 14em;
+    color: mediumvioletred;
+    font-family: cursive;
+}
+.secon-box{
+	font-size: 8em;
+    font-family: monospace;
+    color: midnightblue;
+}
+.login-btn{
+	    margin-top: 5%;
+    float: right;
+    border: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: #fff;
+    background-color: midnightblue
+}

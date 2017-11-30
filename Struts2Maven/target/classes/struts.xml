@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true" />
+
+   <package name="default" extends="struts-default" >
+        <action name="index">
+            <result>/index.jsp</result>
+        </action>
+        <action name="hello" class="org.apache.struts.helloworld.action.HelloWorldAction" method="execute">
+            <result name="success">/hello/HelloWorld.jsp</result>
+        </action>
+        <action name="userindex" class="org.apache.struts.users.action.UsersAction" method="index" >
+        <result name="username">users/Index.jsp</result>
+        </action>
+        <action name="listUser" method="list" class="org.apache.struts.users.action.UsersAction">
+        <result name="success">
+        users/Index.jsp
+        </result>
+        </action>
+        <action name="saveOrUpdateUser" method="saveOrUpdate" class="org.apache.struts.users.action.UsersAction">
+		<result name="success" type="redirect">listUser</result>
+		</action>
+		<action name="editUser" method="edit" class="org.apache.struts.users.action.UsersAction">
+		<result name="success">users/Index.jsp</result>
+		</action>
+		<action name="deleteUser" method="delete" class="org.apache.struts.users.action.UsersAction">
+		<result name="success">listUser</result>
+		</action>
+    </package>
+
+</struts>

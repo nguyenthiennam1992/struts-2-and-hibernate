@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class table= "users" lazy="false" name="org.apache.struts.users.model.Users">
+<id name="id" type="int" column="id">
+<generator class="increment"/>
+</id>
+<property name="role_id" type="int" column="role_id"/>
+<property name="username" type="string" column="username"/>
+<property name="password" type="string" column="password"/>
+<property name="name" type="string" column="name"/>
+<property name="email" type="string" column="email"/>
+<property name="website" type="string" column="website"/>
+<property name="activation_key" type="string" column="activation_key"/>
+<property name="status" type="int" column="status"/>
+</class>
+</hibernate-mapping>

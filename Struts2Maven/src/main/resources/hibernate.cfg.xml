@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<!--  Generated file - Do not edit! -->
+
+<hibernate-configuration>
+<!-- a SessionFactory instance listed as /jndi/name -->
+ <session-factory>
+ 
+  <!-- User / Password -->
+  <property name="connection.username">root</property>
+  <property name="connection.password"></property>
+
+  <!-- Database Settings -->
+  <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+  <!-- For performance reasons changed to MyISAM from org.hibernate.dialect.MySQLInnoDBDialect -->
+  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="connection.url">jdbc:mysql://localhost:3306/jellyfishhr</property>
+  
+  <!-- Properties -->
+  <property name="showsql">true</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <!-- Mapping files -->
+  <mapping resource="hibernate/mapping/Users.hbm.xml"/>
+  <mapping class="org.apache.struts.users.model.Users"/>
+ 
+ </session-factory>
+</hibernate-configuration>﻿
